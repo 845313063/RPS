@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<title>
+TME Educatio
+</title>
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+</script>
+
+   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js" >
+	</script>
+
+              <script> const firebaseConfig = {
+
+  apiKey: "AIzaSyDX6ZtkQyHNOaBq3tL5GzoAwCX_Ssg3bwU",
+  authDomain: "controlo-de-lanpanda.firebaseapp.com",
+  projectId: "controlo-de-lanpanda",
+  storageBucket: "controlo-de-lanpanda.appspot.com",
+  messagingSenderId: "737503359624",
+  appId: "1:737503359624:web:f6271aa5312381fbdf653d",
+  measurementId: "G-MGTM4QEBCX"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig)
+ function ledOn(){firebase.database().ref('SALA').set({estado:'ligada'})}
+ 	function ledOff(){firebase.database().ref('SALA').set({estado:'ligada'})}
+
+
+	           </script>
+
+       <script src="app.js" defer>
+
+	</script>
+
+
+<body>
+	<center>
+	  <img src="IMG_20220204_151719.jpg" width="150"
+     height="150">
+
+	<h1>
+	 RPScontrol 
+	</h1>
+	<span>
+		Roquito Para Sempre
+	</span>
+	    
+	     <p>
+	         Curso de Arduino nivel II(lot)
+             </p>
+
+<h2>Controlo remoto de iluminaçao
+        </h2>
+
+
+<a>
+<button onclick="ledOn()">Ligar</button>
+<button onclick="ledOff()">Desligar</button>
+
+</a> 
+
+</center> 
+
+
+</body>
+<html>
+
